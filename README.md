@@ -100,7 +100,6 @@ In this graph it is seen that the customer uses web to write neagative emotion r
     theme_classic()
 
 
-
 Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
 Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
 
