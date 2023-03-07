@@ -68,7 +68,7 @@ I made a table of the connecting words like: because, although, so, but and much
 ## DATA Summary 🎬
 This is the issue words and the positive and negative sentiments.
 
-![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Summary.png?token=GHSAT0AAAAAAB7VMISXZOHGAE2RWBN2DKEWZAGXRJA)
+![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Summary.png)
 
 
 
