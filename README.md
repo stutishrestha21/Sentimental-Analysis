@@ -103,6 +103,8 @@ In this graph it is seen that the customer uses web to write neagative emotion r
 Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
 
 
+
+
 3. ![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Word%2C%20sentiment.png)
 
 
@@ -113,10 +115,11 @@ This graph shows the word and sentiment accorsing to the product. In Bank accoun
     facet_wrap(~Product, ncol = 2, scales = "free_x")
 
 4. Word cloud for Negative words
+
 ![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Negative%20cloud.png)
 
 5. Word cloud for positive words
-![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Positive%20cloud.png?token=GHSAT0AAAAAAB7VMISWRSCRDT6L6CVXLGVOZAGXF4Q)
+![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Positive%20cloud.png)
 
 6. Shinny app code and the diagram
 Code used for making shinny app:
