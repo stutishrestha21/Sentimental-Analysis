@@ -118,7 +118,10 @@ This graph shows the word and sentiment accorsing to the product. In Bank accoun
 
 ![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Negative%20cloud.png)
 
+
 5. Word cloud for positive words
+
+
 ![App Screenshot](https://github.com/stutishrestha21/Text-Analysis/blob/main/Pictures/Positive%20cloud.png)
 
 6. Shinny app code and the diagram
