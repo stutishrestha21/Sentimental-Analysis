@@ -89,14 +89,19 @@ First I sorted out the sentiment of data in bing_table. In that table there is w
     theme_classic()
 In this graph it is seen that the customer uses web to write neagative emotion related to the issue. If they use fax and phone, they don't say much about the issue or show their emotion. So if a business wants to get honest review, viewing the web could be better option for them.  The code I used for it is:
 
-2.  ggplot(aes(x = word, y= sentiment, fill = State), data = bing_table) +
+2.![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/State.png?token=GHSAT0AAAAAAB7VMISXA5IIAPZBWMZVHZNEZAGXTYQ) 
+
+In this graph it is seen that the customer uses web to write neagative emotion related to the issue. If they use fax and phone, they don't say much about the issue or show their emotion. So if a business wants to get honest review, viewing the web could be better option for them.  The code I used for it is:
+
+    ggplot(aes(x = word, y= sentiment, fill = State), data = bing_table) +
     geom_col(show.legend = TRUE)+
     facet_wrap(vars(), ncol = 1, scales = "free_x")+
     labs(x="Word", y ="Sentiment")+
     theme_classic()
 
- ![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/State.png?token=GHSAT0AAAAAAB7VMISXA5IIAPZBWMZVHZNEZAGXTYQ) 
 
+
+Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
 Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
 
 
