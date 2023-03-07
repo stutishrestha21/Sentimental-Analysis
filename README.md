@@ -66,9 +66,65 @@ I made a table of the connecting words like: because, although, so, but and much
 
 
 ## DATA Summary 🎬
+This is the issue words and the positive and negative sentiments.
 
-![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Summary.png?token=GHSAT0AAAAAAB7VMISWCCKZUJE23P2TCM4QZAGQXPA)  
+![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Summary.png?token=GHSAT0AAAAAAB7VMISXPPF3BPJAXC6DM3RQZAGP7AA)  
 
 
 
 
+
+
+
+## Data Analysis
+
+1. ![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Rplot.png?token=GHSAT0AAAAAAB7VMISX5I7KHOBROS7EO47QZAGUVWA)  
+
+First I sorted out the sentiment of data in bing_table. In that table there is word, company, state, submitted via, consumer disputed, date and sentiments. Then I made a plot using Submitted_via as my x axis, sentiment as my y axis and I filled it with Submitted_via to make my chart colorful. The code I used is:
+
+
+    ggplot(aes(x = Submitted_via, y= sentiment, fill = Submitted_via), data = bing_table) +
+    geom_col(show.legend = TRUE)+
+    facet_wrap(vars(), ncol = 1, scales = "free_x")+
+    labs(x="Submitted Via", y ="Sentiment")+
+    theme_classic()
+In this graph it is seen that the customer uses web to write neagative emotion related to the issue. If they use fax and phone, they don't say much about the issue or show their emotion. So if a business wants to get honest review, viewing the web could be better option for them.  The code I used for it is:
+
+    ggplot(aes(x = word, y= sentiment, fill = State), data = bing_table) +
+    geom_col(show.legend = TRUE)+
+    facet_wrap(vars(), ncol = 1, scales = "free_x")+
+    labs(x="Word", y ="Sentiment")+
+    theme_classic()
+
+2. ![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/State.png?token=GHSAT0AAAAAAB7VMISWTQEFYV76VRPN2SNCZAGVTXQ) 
+
+Then I thought about sorting the data using the same table but this time I filled it with states to see which states have what kind of value. In the diagram we can see that the state AA has the most negative sentiment and WI has the least neagtive sentiment. 
+
+
+3. ![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Word%2C%20sentiment.png?token=GHSAT0AAAAAAB7VMISXBJ7HMBPLPDPSVPPUZAGXAGA)
+
+This graph shows the word and sentiment accorsing to the product. In Bank account or service there is "problems" word used a lot. In credit card we can see "fraud", "issue", "protection", "debt" and "delinquent". In credit report there is "incorrect" word with the most sentiment. The code I used for it is: 
+
+    ggplot(bing_table, aes(word, sentiment, fill = Product)) +
+    geom_col(show.legend = FALSE) +
+    facet_wrap(~Product, ncol = 2, scales = "free_x")
+
+4. Word cloud for Negative words
+![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Negative%20cloud.png?token=GHSAT0AAAAAAB7VMISWJ7MKZ3WBXOAGIIBOZAGXFSA)
+
+5. Word cloud for positive words
+![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Positive%20cloud.png?token=GHSAT0AAAAAAB7VMISWRSCRDT6L6CVXLGVOZAGXF4Q)
+
+6. Shinny app code and the diagram
+Code used for making shinny app:
+
+    
+    #Bar graph
+    barplot(bing_df$sentiment)
+![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Shinny.png?token=GHSAT0AAAAAAB7VMISXEVWNQVK3V27CQ7ZMZAGXMQA)
+
+It shows how many negative words the sentiment of it.
+
+## Conclusion
+
+Sentimental analysis helped to find whether the data is positive or negative. It helpes business to see the issue and know it's sentiment and understand customers need.
