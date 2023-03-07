@@ -67,7 +67,7 @@ I made a table of the connecting words like: because, although, so, but and much
 
 ## DATA Summary 🎬
 
-![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Summary.png?token=GHSAT0AAAAAAB7VMISXPPF3BPJAXC6DM3RQZAGP7AA)  
+![App Screenshot](https://raw.githubusercontent.com/stutishrestha21/Text-Analysis/main/Summary.png?token=GHSAT0AAAAAAB7VMISXKLW5SPL3OLDABTK6ZAGQMOQ)  
 
 
 
