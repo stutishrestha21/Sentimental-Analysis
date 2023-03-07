@@ -75,15 +75,15 @@ mean(bing_table$sentiment, na.rm = TRUE)
 #Data Visualization: Bar chart of where people submitted and the sentiment value of it
 
 ggplot(aes(x = Submitted_via, y= sentiment, fill = Submitted_via), data = bing_table) +
-  geom_col(show.legend = FALSE)+
+  geom_col(show.legend = TRUE)+
   facet_wrap(vars(), ncol = 1, scales = "free_x")+
   labs(x="Submitted Via", y ="Sentiment")+
   theme_classic()
 
 
 #The word and the sentiment, how negative it is, altogether how much and how many
-ggplot(aes(x = word, y= sentiment, fill = Company), data = bing_table) +
-  geom_col(show.legend = FALSE)+
+ggplot(aes(x = word, y= sentiment, fill = State), data = bing_table) +
+  geom_col(show.legend = TRUE)+
   facet_wrap(vars(), ncol = 1, scales = "free_x")+
   labs(x="Word", y ="Sentiment")+
   theme_classic()
