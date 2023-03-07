@@ -82,10 +82,10 @@ ggplot(aes(x = Submitted_via, y= sentiment, fill = Submitted_via), data = bing_t
 
 
 #The word and the sentiment, how negative it is, altogether how much and how many
-ggplot(aes(x = word, y= sentiment, fill = "pink"), data = bing_df) +
+ggplot(aes(x = word, y= sentiment, fill = Company), data = bing_table) +
   geom_col(show.legend = FALSE)+
-  facet_wrap(vars(""), ncol = 3, scales = "free_x")+
-  labs(x="Consumer Disputed", y ="Sentiment")+
+  facet_wrap(vars(), ncol = 1, scales = "free_x")+
+  labs(x="Word", y ="Sentiment")+
   theme_classic()
 
 #Showing the word used in the product and how much sentiment it has
