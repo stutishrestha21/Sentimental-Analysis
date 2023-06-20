@@ -1,5 +1,5 @@
 
-# Project 1- Text Analysis 📕
+# Project 1- Sentimental Analysis 📕
 
 
 
